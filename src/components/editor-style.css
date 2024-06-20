@@ -1,0 +1,53 @@
+.EasyMDEContainer {
+  /* background-color: theme("colors.input") !important; */
+  background-color: unset !important;
+}
+
+.CodeMirror,
+.editor-preview {
+  color: theme("colors.foreground") !important;
+  border-color: unset !important;
+  background-color: transparent !important;
+}
+
+.cm-s-easymde .CodeMirror-cursor {
+  border-color: unset !important;
+}
+
+.editor-toolbar button i {
+  color: theme("colors.foreground") !important;
+}
+
+.editor-toolbar button.active,
+.editor-toolbar button:hover {
+  background-color: transparent !important; /* Fixes toolbar buttons from appearing as white when hovered or selected*/
+}
+
+.editor-preview pre {
+  background-color: theme(
+    "colors.muted.DEFAULT"
+  ) !important; /* This fixes code blocks in Markdown appearing with a white background */
+}
+
+.EasyMDEContainer textarea {
+  background-color: transparent;
+}
+
+.EasyMDEContainer .CodeMirror,
+.EasyMDEContainer .CodeMirror div,
+.EasyMDEContainer textarea,
+.EasyMDEContainer .CodeMirror-scroll {
+  height: fit-content;
+  min-height: unset !important;
+  /* border: none !important; */
+}
+
+.EasyMDEContainer .CodeMirror {
+  padding: 0;
+  border: none !important;
+  border-radius: theme("borderRadius.xl");
+}
+
+.CodeMirror-wrap:first-child {
+  padding: 0.8rem !important;
+}
